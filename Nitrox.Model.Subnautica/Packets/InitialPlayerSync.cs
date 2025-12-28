@@ -10,6 +10,7 @@ using Nitrox.Model.Server;
 using Nitrox.Model.Subnautica.DataStructures.GameLogic;
 using Nitrox.Model.Subnautica.MultiplayerSession;
 using NitroxCustomRecipe = Nitrox.Model.Subnautica.DataStructures.GameLogic.CustomRecipe;
+using NitroxCustomFragment = Nitrox.Model.Subnautica.DataStructures.GameLogic.CustomFragment;
 
 namespace Nitrox.Model.Subnautica.Packets
 {
@@ -43,6 +44,7 @@ namespace Nitrox.Model.Subnautica.Packets
         public bool InPrecursor { get; }
         public bool DisplaySurfaceWater { get; }
         public List<NitroxCustomRecipe> CustomRecipes { get; }
+        public List<NitroxCustomFragment> CustomFragments { get; }
 
         public InitialPlayerSync(NitroxId playerGameObjectId,
             bool firstTimeConnecting,
@@ -70,7 +72,8 @@ namespace Nitrox.Model.Subnautica.Packets
             SessionSettings sessionSettings,
             bool inPrecursor,
             bool displaySurfaceWater,
-            IEnumerable<NitroxCustomRecipe> customRecipes)
+            IEnumerable<NitroxCustomRecipe> customRecipes,
+            IEnumerable<NitroxCustomFragment> customFragments)
         {
             AssignedEscapePodId = assignedEscapePodId;
             PlayerGameObjectId = playerGameObjectId;
@@ -99,6 +102,7 @@ namespace Nitrox.Model.Subnautica.Packets
             InPrecursor = inPrecursor;
             DisplaySurfaceWater = displaySurfaceWater;
             CustomRecipes = customRecipes.ToList();
+            CustomFragments = customFragments.ToList();
         }
 
         /// <remarks>Used for deserialization</remarks>
@@ -129,7 +133,8 @@ namespace Nitrox.Model.Subnautica.Packets
             SessionSettings sessionSettings,
             bool inPrecursor,
             bool displaySurfaceWater,
-            List<NitroxCustomRecipe> customRecipes)
+            List<NitroxCustomRecipe> customRecipes,
+            List<NitroxCustomFragment> customFragments)
         {
             AssignedEscapePodId = assignedEscapePodId;
             PlayerGameObjectId = playerGameObjectId;
@@ -158,6 +163,7 @@ namespace Nitrox.Model.Subnautica.Packets
             InPrecursor = inPrecursor;
             DisplaySurfaceWater = displaySurfaceWater;
             CustomRecipes = customRecipes;
+            CustomFragments = customFragments;
         }
     }
 }

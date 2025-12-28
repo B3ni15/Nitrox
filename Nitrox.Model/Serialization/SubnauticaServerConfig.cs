@@ -131,5 +131,8 @@ namespace Nitrox.Model.Serialization
 
         [PropertyDescription("Enables custom recipes from recipes.json file")]
         public bool CustomRecipesEnabled { get; set; } = false;
+
+        [PropertyDescription("Enables custom fragment requirements from fragments.json file")]
+        public bool CustomFragmentsEnabled { get; set; } = false;
     }
 }

@@ -1,0 +1,104 @@
+{
+  "Fragments": [
+    {
+      "TechType": "Seaglide",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "Seamoth",
+      "TotalFragments": 6
+    },
+    {
+      "TechType": "Cyclops",
+      "TotalFragments": 8
+    },
+    {
+      "TechType": "Exosuit",
+      "TotalFragments": 8
+    },
+    {
+      "TechType": "Constructor",
+      "TotalFragments": 5
+    },
+    {
+      "TechType": "Beacon",
+      "TotalFragments": 3
+    },
+    {
+      "TechType": "Gravsphere",
+      "TotalFragments": 3
+    },
+    {
+      "TechType": "LaserCutter",
+      "TotalFragments": 5
+    },
+    {
+      "TechType": "StasisRifle",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "PropulsionCannon",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "BaseMapRoom",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "BaseMoonpool",
+      "TotalFragments": 5
+    },
+    {
+      "TechType": "BaseNuclearReactor",
+      "TotalFragments": 6
+    },
+    {
+      "TechType": "ThermalPlant",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "Workbench",
+      "TotalFragments": 5
+    },
+    {
+      "TechType": "BaseWaterPark",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "BaseBioReactor",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "PowerTransmitter",
+      "TotalFragments": 3
+    },
+    {
+      "TechType": "ExosuitDrillArmFragment",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "ExosuitGrapplingArmFragment",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "ExosuitPropulsionArmFragment",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "ExosuitTorpedoArmFragment",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "SeamothSolarCharge",
+      "TotalFragments": 3
+    },
+    {
+      "TechType": "CyclopsShieldModule",
+      "TotalFragments": 5
+    },
+    {
+      "TechType": "CyclopsThermalReactorModule",
+      "TotalFragments": 5
+    }
+  ]
+}

@@ -12,6 +12,7 @@ namespace Nitrox.Server.Subnautica.Models.Serialization.World
         public PlayerManager PlayerManager { get; set; }
         public JoiningManager JoiningManager { get; set; }
         public CustomRecipeManager CustomRecipeManager { get; set; }
+        public CustomFragmentManager CustomFragmentManager { get; set; }
         public ScheduleKeeper ScheduleKeeper { get; set; }
         public TimeKeeper TimeKeeper { get; set; }
         public SimulationOwnershipData SimulationOwnershipData { get; set; }

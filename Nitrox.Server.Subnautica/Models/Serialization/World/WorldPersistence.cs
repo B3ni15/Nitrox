@@ -161,6 +161,7 @@ public class WorldPersistence
         };
 
         world.CustomRecipeManager = new CustomRecipeManager(config, saveDir);
+        world.CustomFragmentManager = new CustomFragmentManager(config, saveDir);
         world.JoiningManager = new(world.PlayerManager, config, world, world.SessionSettings);
         world.TimeKeeper = new(world.PlayerManager, ntpSyncer, pWorldData.WorldData.GameData.StoryTiming.ElapsedSeconds, pWorldData.WorldData.GameData.StoryTiming.RealTimeElapsed);
         world.StoryManager = new StoryManager(world.PlayerManager, pWorldData.WorldData.GameData.PDAState, pWorldData.WorldData.GameData.StoryGoals, world.TimeKeeper, seed, pWorldData.WorldData.GameData.StoryTiming.AuroraCountdownTime,

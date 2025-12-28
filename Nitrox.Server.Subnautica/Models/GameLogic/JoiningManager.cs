@@ -186,7 +186,8 @@ public sealed class JoiningManager
             sessionSettings,
             player.InPrecursor,
             player.DisplaySurfaceWater,
-            world.CustomRecipeManager?.CustomRecipes ?? new()
+            world.CustomRecipeManager?.CustomRecipes ?? new(),
+            world.CustomFragmentManager?.CustomFragments ?? new()
         );
 
         player.SendPacket(initialPlayerSync);
