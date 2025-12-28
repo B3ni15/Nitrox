@@ -185,7 +185,8 @@ public sealed class JoiningManager
             serverConfig.KeepInventoryOnDeath,
             sessionSettings,
             player.InPrecursor,
-            player.DisplaySurfaceWater
+            player.DisplaySurfaceWater,
+            world.CustomRecipeManager?.CustomRecipes ?? new()
         );
 
         player.SendPacket(initialPlayerSync);

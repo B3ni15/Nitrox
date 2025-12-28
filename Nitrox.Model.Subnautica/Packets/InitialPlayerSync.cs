@@ -9,6 +9,7 @@ using Nitrox.Model.Packets;
 using Nitrox.Model.Server;
 using Nitrox.Model.Subnautica.DataStructures.GameLogic;
 using Nitrox.Model.Subnautica.MultiplayerSession;
+using NitroxCustomRecipe = Nitrox.Model.Subnautica.DataStructures.GameLogic.CustomRecipe;
 
 namespace Nitrox.Model.Subnautica.Packets
 {
@@ -41,6 +42,7 @@ namespace Nitrox.Model.Subnautica.Packets
         public SessionSettings SessionSettings { get; }
         public bool InPrecursor { get; }
         public bool DisplaySurfaceWater { get; }
+        public List<NitroxCustomRecipe> CustomRecipes { get; }
 
         public InitialPlayerSync(NitroxId playerGameObjectId,
             bool firstTimeConnecting,
@@ -67,7 +69,8 @@ namespace Nitrox.Model.Subnautica.Packets
             bool keepInventoryOnDeath,
             SessionSettings sessionSettings,
             bool inPrecursor,
-            bool displaySurfaceWater)
+            bool displaySurfaceWater,
+            IEnumerable<NitroxCustomRecipe> customRecipes)
         {
             AssignedEscapePodId = assignedEscapePodId;
             PlayerGameObjectId = playerGameObjectId;
@@ -95,6 +98,7 @@ namespace Nitrox.Model.Subnautica.Packets
             SessionSettings = sessionSettings;
             InPrecursor = inPrecursor;
             DisplaySurfaceWater = displaySurfaceWater;
+            CustomRecipes = customRecipes.ToList();
         }
 
         /// <remarks>Used for deserialization</remarks>
@@ -124,7 +128,8 @@ namespace Nitrox.Model.Subnautica.Packets
             bool keepInventoryOnDeath,
             SessionSettings sessionSettings,
             bool inPrecursor,
-            bool displaySurfaceWater)
+            bool displaySurfaceWater,
+            List<NitroxCustomRecipe> customRecipes)
         {
             AssignedEscapePodId = assignedEscapePodId;
             PlayerGameObjectId = playerGameObjectId;
@@ -152,6 +157,7 @@ namespace Nitrox.Model.Subnautica.Packets
             SessionSettings = sessionSettings;
             InPrecursor = inPrecursor;
             DisplaySurfaceWater = displaySurfaceWater;
+            CustomRecipes = customRecipes;
         }
     }
 }

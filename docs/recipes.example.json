@@ -1,0 +1,257 @@
+{
+  "Recipes": [
+    {
+      "TechType": "Knife",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Titanium", "Amount": 3 },
+        { "TechType": "Silicone", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "Scanner",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Titanium", "Amount": 3 },
+        { "TechType": "Battery", "Amount": 2 },
+        { "TechType": "Gold", "Amount": 1 }
+      ]
+    },
+    {
+      "TechType": "Seaglide",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Battery", "Amount": 2 },
+        { "TechType": "Lubricant", "Amount": 2 },
+        { "TechType": "CopperWire", "Amount": 2 },
+        { "TechType": "Titanium", "Amount": 4 }
+      ]
+    },
+    {
+      "TechType": "Battery",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Copper", "Amount": 2 },
+        { "TechType": "AcidMushroom", "Amount": 3 }
+      ]
+    },
+    {
+      "TechType": "Fins",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Silicone", "Amount": 3 }
+      ]
+    },
+    {
+      "TechType": "Tank",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Titanium", "Amount": 4 }
+      ]
+    },
+    {
+      "TechType": "Flashlight",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Battery", "Amount": 1 },
+        { "TechType": "Glass", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "Builder",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Titanium", "Amount": 2 },
+        { "TechType": "Battery", "Amount": 1 },
+        { "TechType": "ComputerChip", "Amount": 1 },
+        { "TechType": "WiringKit", "Amount": 1 }
+      ]
+    },
+    {
+      "TechType": "Welder",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Silicone", "Amount": 2 },
+        { "TechType": "CrashPowder", "Amount": 2 },
+        { "TechType": "Titanium", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "LaserCutter",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Diamond", "Amount": 3 },
+        { "TechType": "Titanium", "Amount": 2 },
+        { "TechType": "CrashPowder", "Amount": 2 },
+        { "TechType": "Battery", "Amount": 1 }
+      ]
+    },
+    {
+      "TechType": "Silicone",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "CreepvineSeedCluster", "Amount": 3 }
+      ]
+    },
+    {
+      "TechType": "FiberMesh",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "CreepvinePiece", "Amount": 3 }
+      ]
+    },
+    {
+      "TechType": "Glass",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Quartz", "Amount": 3 }
+      ]
+    },
+    {
+      "TechType": "TitaniumIngot",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Titanium", "Amount": 15 }
+      ]
+    },
+    {
+      "TechType": "CopperWire",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Copper", "Amount": 3 }
+      ]
+    },
+    {
+      "TechType": "WiringKit",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Silver", "Amount": 3 }
+      ]
+    },
+    {
+      "TechType": "ComputerChip",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "TableCoral", "Amount": 3 },
+        { "TechType": "Gold", "Amount": 2 },
+        { "TechType": "CopperWire", "Amount": 1 }
+      ]
+    },
+    {
+      "TechType": "Seamoth",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "TitaniumIngot", "Amount": 2 },
+        { "TechType": "PowerCell", "Amount": 2 },
+        { "TechType": "Glass", "Amount": 3 },
+        { "TechType": "Lubricant", "Amount": 2 },
+        { "TechType": "Lead", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "PowerCell",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Battery", "Amount": 3 },
+        { "TechType": "Silicone", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "Lubricant",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "CreepvineSeedCluster", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "FirstAidKit",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "FiberMesh", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "Beacon",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Titanium", "Amount": 2 },
+        { "TechType": "Copper", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "Gravsphere",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Titanium", "Amount": 3 },
+        { "TechType": "Copper", "Amount": 3 },
+        { "TechType": "Battery", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "PropulsionCannon",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Titanium", "Amount": 3 },
+        { "TechType": "Battery", "Amount": 2 },
+        { "TechType": "WiringKit", "Amount": 1 },
+        { "TechType": "Magnetite", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "StasisRifle",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Titanium", "Amount": 2 },
+        { "TechType": "Battery", "Amount": 2 },
+        { "TechType": "ComputerChip", "Amount": 1 },
+        { "TechType": "Magnetite", "Amount": 3 }
+      ]
+    },
+    {
+      "TechType": "ReinforcedDiveSuit",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "FiberMesh", "Amount": 2 },
+        { "TechType": "Silicone", "Amount": 2 },
+        { "TechType": "Diamond", "Amount": 3 },
+        { "TechType": "Titanium", "Amount": 3 }
+      ]
+    },
+    {
+      "TechType": "UltraGlideFins",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Fins", "Amount": 1 },
+        { "TechType": "Silicone", "Amount": 3 },
+        { "TechType": "Titanium", "Amount": 2 },
+        { "TechType": "Lithium", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "Rebreather",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "WiringKit", "Amount": 1 },
+        { "TechType": "FiberMesh", "Amount": 2 }
+      ]
+    },
+    {
+      "TechType": "Compass",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "CopperWire", "Amount": 1 },
+        { "TechType": "WiringKit", "Amount": 1 }
+      ]
+    },
+    {
+      "TechType": "DoubleTank",
+      "CraftAmount": 1,
+      "Ingredients": [
+        { "TechType": "Tank", "Amount": 1 },
+        { "TechType": "Glass", "Amount": 2 },
+        { "TechType": "Titanium", "Amount": 4 },
+        { "TechType": "Silver", "Amount": 2 }
+      ]
+    }
+  ]
+}

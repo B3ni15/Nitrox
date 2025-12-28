@@ -118,16 +118,17 @@ public class WorldPersistence
 
     public World Load(string saveName)
     {
-        Optional<World> fileLoadedWorld = LoadFromFile(Path.Combine(KeyValueStore.Instance.GetSavesFolderDir(), saveName));
+        string saveDir = Path.Combine(KeyValueStore.Instance.GetSavesFolderDir(), saveName);
+        Optional<World> fileLoadedWorld = LoadFromFile(saveDir);
         if (fileLoadedWorld.HasValue)
         {
             return fileLoadedWorld.Value;
         }
 
-        return CreateFreshWorld();
+        return CreateFreshWorld(saveDir);
     }
 
-    public World CreateWorld(PersistedWorldData pWorldData, NitroxGameMode gameMode)
+    public World CreateWorld(PersistedWorldData pWorldData, NitroxGameMode gameMode, string saveDir)
     {
         string seed = pWorldData.WorldData.Seed;
         if (string.IsNullOrWhiteSpace(seed))
@@ -159,6 +160,7 @@ public class WorldPersistence
             SessionSettings = new()
         };
 
+        world.CustomRecipeManager = new CustomRecipeManager(config, saveDir);
         world.JoiningManager = new(world.PlayerManager, config, world, world.SessionSettings);
         world.TimeKeeper = new(world.PlayerManager, ntpSyncer, pWorldData.WorldData.GameData.StoryTiming.ElapsedSeconds, pWorldData.WorldData.GameData.StoryTiming.RealTimeElapsed);
         world.StoryManager = new StoryManager(world.PlayerManager, pWorldData.WorldData.GameData.PDAState, pWorldData.WorldData.GameData.StoryGoals, world.TimeKeeper, seed, pWorldData.WorldData.GameData.StoryTiming.AuroraCountdownTime,
@@ -243,7 +245,7 @@ public class WorldPersistence
             return Optional.Empty;
         }
 
-        World world = CreateWorld(persistedData, config.GameMode);
+        World world = CreateWorld(persistedData, config.GameMode, saveDir);
 
         return Optional.Of(world);
     }
@@ -282,7 +284,7 @@ public class WorldPersistence
         return null;
     }
 
-    private World CreateFreshWorld()
+    private World CreateFreshWorld(string saveDir)
     {
         PersistedWorldData pWorldData = new()
         {
@@ -302,7 +304,7 @@ public class WorldPersistence
             GlobalRootData = new GlobalRootData()
         };
 
-        World newWorld = CreateWorld(pWorldData, config.GameMode);
+        World newWorld = CreateWorld(pWorldData, config.GameMode, saveDir);
         worldModifier.ModifyWorld(newWorld);
 
         return newWorld;

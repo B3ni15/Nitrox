@@ -128,5 +128,8 @@ namespace Nitrox.Model.Serialization
 
         [PropertyDescription("Activates/Deactivates Player versus Player damage/interactions")]
         public bool PvPEnabled { get; set; } = true;
+
+        [PropertyDescription("Enables custom recipes from recipes.json file")]
+        public bool CustomRecipesEnabled { get; set; } = false;
     }
 }
