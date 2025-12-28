@@ -1,75 +1,83 @@
 {
   "Fragments": [
     {
-      "TechType": "Seaglide",
+      "TechType": "SeaglideFragment",
       "TotalFragments": 4
     },
     {
-      "TechType": "Seamoth",
+      "TechType": "SeamothFragment",
       "TotalFragments": 6
     },
     {
-      "TechType": "Cyclops",
+      "TechType": "CyclopsHullFragment",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "CyclopsBridgeFragment",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "CyclopsEngineFragment",
+      "TotalFragments": 4
+    },
+    {
+      "TechType": "ExosuitFragment",
       "TotalFragments": 8
     },
     {
-      "TechType": "Exosuit",
-      "TotalFragments": 8
-    },
-    {
-      "TechType": "Constructor",
+      "TechType": "ConstructorFragment",
       "TotalFragments": 5
     },
     {
-      "TechType": "Beacon",
+      "TechType": "BeaconFragment",
       "TotalFragments": 3
     },
     {
-      "TechType": "Gravsphere",
+      "TechType": "GravSphereFragment",
       "TotalFragments": 3
     },
     {
-      "TechType": "LaserCutter",
+      "TechType": "LaserCutterFragment",
       "TotalFragments": 5
     },
     {
-      "TechType": "StasisRifle",
+      "TechType": "StasisRifleFragment",
       "TotalFragments": 4
     },
     {
-      "TechType": "PropulsionCannon",
+      "TechType": "PropulsionCannonFragment",
       "TotalFragments": 4
     },
     {
-      "TechType": "BaseMapRoom",
+      "TechType": "BaseMapRoomFragment",
       "TotalFragments": 4
     },
     {
-      "TechType": "BaseMoonpool",
+      "TechType": "MoonpoolFragment",
       "TotalFragments": 5
     },
     {
-      "TechType": "BaseNuclearReactor",
+      "TechType": "BaseNuclearReactorFragment",
       "TotalFragments": 6
     },
     {
-      "TechType": "ThermalPlant",
+      "TechType": "ThermalPlantFragment",
       "TotalFragments": 4
     },
     {
-      "TechType": "Workbench",
+      "TechType": "WorkbenchFragment",
       "TotalFragments": 5
     },
     {
-      "TechType": "BaseWaterPark",
+      "TechType": "BaseWaterParkFragment",
       "TotalFragments": 4
     },
     {
-      "TechType": "BaseBioReactor",
+      "TechType": "BaseBioReactorFragment",
       "TotalFragments": 4
     },
     {
-      "TechType": "PowerTransmitter",
+      "TechType": "PowerTransmitterFragment",
       "TotalFragments": 3
     },
     {
@@ -89,16 +97,24 @@
       "TotalFragments": 4
     },
     {
-      "TechType": "SeamothSolarCharge",
+      "TechType": "SeamothSolarChargeFragment",
       "TotalFragments": 3
     },
     {
-      "TechType": "CyclopsShieldModule",
+      "TechType": "CyclopsShieldFragment",
       "TotalFragments": 5
     },
     {
-      "TechType": "CyclopsThermalReactorModule",
+      "TechType": "CyclopsThermalReactorFragment",
       "TotalFragments": 5
+    },
+    {
+      "TechType": "BatteryChargerFragment",
+      "TotalFragments": 3
+    },
+    {
+      "TechType": "PowerCellChargerFragment",
+      "TotalFragments": 3
     }
   ]
 }

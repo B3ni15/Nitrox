@@ -68,8 +68,10 @@ A `fragments.json` fájl a szerver save mappájában található. A fájl tartal
 
 | Mező | Típus | Leírás |
 |------|-------|--------|
-| `TechType` | string | A feloldható TechType neve (pl. "Seamoth", "Seaglide") |
+| `TechType` | string | A **fragment** TechType neve (pl. "SeamothFragment", "SeaglideFragment") - NEM a végeredmény! |
 | `TotalFragments` | int | Hány fragment szkennelése szükséges a feloldáshoz |
+
+**FONTOS:** A TechType-nak a FRAGMENT nevét kell használni (pl. `SeamothFragment`), NEM a feloldott technológia nevét (pl. `Seamoth`)!
 
 ## Használat
 
@@ -85,21 +87,23 @@ A `fragments.json` fájl a szerver save mappájában található. A fájl tartal
 ```json
 {
   "Fragments": [
-    { "TechType": "Seaglide", "TotalFragments": 5 },
-    { "TechType": "Seamoth", "TotalFragments": 8 },
-    { "TechType": "Cyclops", "TotalFragments": 12 },
-    { "TechType": "Exosuit", "TotalFragments": 10 },
-    { "TechType": "Constructor", "TotalFragments": 6 },
-    { "TechType": "Beacon", "TotalFragments": 4 },
-    { "TechType": "Gravsphere", "TotalFragments": 4 },
-    { "TechType": "LaserCutter", "TotalFragments": 5 },
-    { "TechType": "StasisRifle", "TotalFragments": 5 },
-    { "TechType": "PropulsionCannon", "TotalFragments": 5 },
-    { "TechType": "Workbench", "TotalFragments": 6 },
-    { "TechType": "BaseNuclearReactor", "TotalFragments": 6 },
-    { "TechType": "ThermalPlant", "TotalFragments": 5 },
-    { "TechType": "BaseMapRoom", "TotalFragments": 5 },
-    { "TechType": "BaseMoonpool", "TotalFragments": 6 }
+    { "TechType": "SeaglideFragment", "TotalFragments": 5 },
+    { "TechType": "SeamothFragment", "TotalFragments": 8 },
+    { "TechType": "CyclopsHullFragment", "TotalFragments": 5 },
+    { "TechType": "CyclopsBridgeFragment", "TotalFragments": 5 },
+    { "TechType": "CyclopsEngineFragment", "TotalFragments": 5 },
+    { "TechType": "ExosuitFragment", "TotalFragments": 10 },
+    { "TechType": "ConstructorFragment", "TotalFragments": 6 },
+    { "TechType": "BeaconFragment", "TotalFragments": 4 },
+    { "TechType": "GravSphereFragment", "TotalFragments": 4 },
+    { "TechType": "LaserCutterFragment", "TotalFragments": 5 },
+    { "TechType": "StasisRifleFragment", "TotalFragments": 5 },
+    { "TechType": "PropulsionCannonFragment", "TotalFragments": 5 },
+    { "TechType": "WorkbenchFragment", "TotalFragments": 6 },
+    { "TechType": "BaseNuclearReactorFragment", "TotalFragments": 6 },
+    { "TechType": "ThermalPlantFragment", "TotalFragments": 5 },
+    { "TechType": "BaseMapRoomFragment", "TotalFragments": 5 },
+    { "TechType": "MoonpoolFragment", "TotalFragments": 6 }
   ]
 }
 ```
@@ -109,56 +113,64 @@ A `fragments.json` fájl a szerver save mappájában található. A fájl tartal
 ```json
 {
   "Fragments": [
-    { "TechType": "Seamoth", "TotalFragments": 2 },
-    { "TechType": "Cyclops", "TotalFragments": 3 },
-    { "TechType": "Exosuit", "TotalFragments": 2 },
-    { "TechType": "LaserCutter", "TotalFragments": 1 },
-    { "TechType": "StasisRifle", "TotalFragments": 1 }
+    { "TechType": "SeamothFragment", "TotalFragments": 2 },
+    { "TechType": "CyclopsHullFragment", "TotalFragments": 1 },
+    { "TechType": "CyclopsBridgeFragment", "TotalFragments": 1 },
+    { "TechType": "CyclopsEngineFragment", "TotalFragments": 1 },
+    { "TechType": "ExosuitFragment", "TotalFragments": 2 },
+    { "TechType": "LaserCutterFragment", "TotalFragments": 1 },
+    { "TechType": "StasisRifleFragment", "TotalFragments": 1 }
   ]
 }
 ```
 
-## Fragmentálható TechType Lista
+## Fragment TechType Lista
 
-Az alábbi lista tartalmazza a játékban szkennelhető fragmenteket és azok alapértelmezett értékeit.
+Az alábbi lista tartalmazza a játékban szkennelhető fragmentek **TechType neveit** és azok alapértelmezett értékeit.
+
+**FONTOS:** A JSON-ban a "Fragment" végződésű neveket kell használni!
 
 ### Járművek és Segédeszközök
 
-| TechType | Magyar név | Alapértelmezett fragment szám |
-|----------|------------|-------------------------------|
-| `Seaglide` | Seaglide | 2 |
-| `Seamoth` | Seamoth | 3 |
-| `Cyclops` | Cyclops (hull/bridge/engine) | 3+3+3 |
-| `Exosuit` | Exoruha (Prawn Suit) | 4 |
-| `Constructor` | Mobil jármű készítő | 3 |
+| Fragment TechType | Feloldott technológia | Alapértelmezett |
+|-------------------|----------------------|-----------------|
+| `SeaglideFragment` | Seaglide | 2 |
+| `SeamothFragment` | Seamoth | 3 |
+| `CyclopsHullFragment` | Cyclops (törzs) | 3 |
+| `CyclopsBridgeFragment` | Cyclops (híd) | 3 |
+| `CyclopsEngineFragment` | Cyclops (motor) | 3 |
+| `ExosuitFragment` | Exoruha (Prawn Suit) | 4 |
+| `ConstructorFragment` | Mobil jármű készítő | 3 |
 
 ### Eszközök
 
-| TechType | Magyar név | Alapértelmezett fragment szám |
-|----------|------------|-------------------------------|
-| `Beacon` | Jelzőbója | 2 |
-| `Gravsphere` | Gravitációs gömb | 2 |
-| `LaserCutter` | Lézervágó | 3 |
-| `StasisRifle` | Stázispuska | 2 |
-| `PropulsionCannon` | Hajtóágyú | 2 |
+| Fragment TechType | Feloldott technológia | Alapértelmezett |
+|-------------------|----------------------|-----------------|
+| `BeaconFragment` | Jelzőbója | 2 |
+| `GravSphereFragment` | Gravitációs gömb | 2 |
+| `LaserCutterFragment` | Lézervágó | 3 |
+| `StasisRifleFragment` | Stázispuska | 2 |
+| `PropulsionCannonFragment` | Hajtóágyú | 2 |
 
 ### Bázis modulok
 
-| TechType | Magyar név | Alapértelmezett fragment szám |
-|----------|------------|-------------------------------|
-| `BaseMapRoom` | Térképszoba | 2 |
-| `BaseMoonpool` | Holdfény kikötő | 2 |
-| `BaseNuclearReactor` | Atomreaktor | 3 |
-| `ThermalPlant` | Hőerőmű | 2 |
-| `Workbench` | Módosító állomás | 3 |
-| `BaseWaterPark` | Vízipark (Alien Containment) | 2 |
-| `BaseBioReactor` | Bioreaktor | 2 |
-| `PowerTransmitter` | Áramátviteli | 2 |
+| Fragment TechType | Feloldott technológia | Alapértelmezett |
+|-------------------|----------------------|-----------------|
+| `BaseMapRoomFragment` | Térképszoba | 2 |
+| `MoonpoolFragment` | Holdfény kikötő | 2 |
+| `BaseNuclearReactorFragment` | Atomreaktor | 3 |
+| `ThermalPlantFragment` | Hőerőmű | 2 |
+| `WorkbenchFragment` | Módosító állomás | 3 |
+| `BaseWaterParkFragment` | Vízipark (Alien Containment) | 2 |
+| `BaseBioReactorFragment` | Bioreaktor | 2 |
+| `PowerTransmitterFragment` | Áramátviteli | 2 |
+| `BatteryChargerFragment` | Elemtöltő | 2 |
+| `PowerCellChargerFragment` | Energiacella töltő | 2 |
 
 ### Prawn Suit bővítmények
 
-| TechType | Magyar név | Alapértelmezett fragment szám |
-|----------|------------|-------------------------------|
+| Fragment TechType | Feloldott technológia | Alapértelmezett |
+|-------------------|----------------------|-----------------|
 | `ExosuitDrillArmFragment` | Fúrókar | 2 |
 | `ExosuitGrapplingArmFragment` | Kampóskar | 2 |
 | `ExosuitPropulsionArmFragment` | Hajtókar | 2 |
@@ -166,16 +178,16 @@ Az alábbi lista tartalmazza a játékban szkennelhető fragmenteket és azok al
 
 ### Seamoth bővítmények
 
-| TechType | Magyar név | Alapértelmezett fragment szám |
-|----------|------------|-------------------------------|
-| `SeamothSolarCharge` | Napelemes töltő | 2 |
+| Fragment TechType | Feloldott technológia | Alapértelmezett |
+|-------------------|----------------------|-----------------|
+| `SeamothSolarChargeFragment` | Napelemes töltő | 2 |
 
 ### Cyclops bővítmények
 
-| TechType | Magyar név | Alapértelmezett fragment szám |
-|----------|------------|-------------------------------|
-| `CyclopsShieldModule` | Pajzsgenerátor | 3 |
-| `CyclopsThermalReactorModule` | Termikus reaktor | 3 |
+| Fragment TechType | Feloldott technológia | Alapértelmezett |
+|-------------------|----------------------|-----------------|
+| `CyclopsShieldFragment` | Pajzsgenerátor | 3 |
+| `CyclopsThermalReactorFragment` | Termikus reaktor | 3 |
 
 ## Megjegyzések
 
