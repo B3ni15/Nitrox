@@ -13,7 +13,7 @@ public sealed partial class TechData_GetIngredients_Patch : NitroxPatch, IDynami
 {
     private static readonly MethodInfo TARGET_METHOD = Reflect.Method(() => TechData.GetIngredients(default));
 
-    public static void Postfix(TechType techType, ref IList<IIngredient> __result)
+    public static void Postfix(TechType techType, ref IList<Ingredient> __result)
     {
         if (!CustomRecipeData.IsInitialized)
         {
